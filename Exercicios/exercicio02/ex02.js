@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var PromptSync = require("prompt-sync");
+var function02_1 = require("./function02");
+var prompt = PromptSync();
+var nome = prompt('Nome: ');
+var senha = prompt('Senha: ');
+var cpf = prompt('CPF: ');
+var contaBancaria = new function02_1.ContaBancaria(nome, senha, cpf);
+console.log("Nome:  ".concat(nome));
+console.log("Senha: ".concat(senha));
+console.log("CPF: ".concat(cpf));

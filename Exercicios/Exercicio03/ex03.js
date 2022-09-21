@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var PromptSync = require("prompt-sync");
+var function03_1 = require("./function03");
+var prompt = PromptSync();
+var nome = prompt('Seu nome : ');
+var cpf = prompt('Seu cpf: ');
+var diagnostico = prompt('Seu diagnostico: ');
+var Pacient = new function03_1.Paciente(nome, cpf, diagnostico);
+console.log("Nome: ".concat(nome));
+console.log("CPF: ".concat(cpf));
+console.log("diagnostisco: ".concat(diagnostico));
